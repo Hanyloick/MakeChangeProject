@@ -1,3 +1,4 @@
+package com.skilldistillery.makechangeproject;
 import java.util.Scanner;
 
 public class MakeChangeProject {
@@ -6,14 +7,15 @@ public class MakeChangeProject {
 			"quarters", "dimes", "nickels", "pennies" };
 
 	public static void main(String[] args) {
-		MakeChangeProject mcp = new MakeChangeProject();
+		MakeChangeProject makeChangeProject = new MakeChangeProject();
 
-		mcp.startUp();
+		makeChangeProject.startUp();
 	}
 
 	public void startUp() {
 		Scanner sc = new Scanner(System.in);
 		int intPrice, intPaid, change;
+		
 		System.out.println("what was your total?");
 		intPrice = (int) (getDouble(sc) * 100); 
 		System.out.println("how much are you paying?"); 
